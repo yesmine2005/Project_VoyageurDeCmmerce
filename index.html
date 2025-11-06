@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title></title>
-  <link rel="stylesheet" href="style.css">
+  <title>TSP Kawaii</title>
+  <link rel="stylesheet" href="index.css"> <!-- corrigé -->
 </head>
 <body>
   <div class="page">
@@ -12,7 +12,12 @@
       <div class="logo">
         <!-- simple kawaii cat svg -->
         <svg class="cat" viewBox="0 0 64 64" width="48" height="48" aria-hidden>
-          <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#ff9ad6"/><stop offset="1" stop-color="#9b5bff"/></linearGradient></defs>
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#ff9ad6"/>
+              <stop offset="1" stop-color="#9b5bff"/>
+            </linearGradient>
+          </defs>
           <ellipse cx="32" cy="38" rx="18" ry="14" fill="url(#g)" opacity="0.95"/>
           <path d="M20 18 Q16 10 24 12 Q28 14 32 10 Q36 14 40 12 Q48 10 44 18" fill="#ffbfe8"/>
           <circle cx="24" cy="36" r="3" fill="#fff"/>
@@ -22,15 +27,17 @@
         </svg>
         <h1>TSP Kawaii</h1>
       </div>
-      <p class="subtitle">Bonjour  choisis un algo et je t'affiche le chemin !</p>
+      <p class="subtitle">Bonjour ! Choisis un algo et je t'affiche le chemin !</p>
     </header>
 
     <main>
       <aside class="panel">
         <div class="chat">
           <div class="avatar">
-           
-            <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#fff" opacity="0.08"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="26" fill="#fff">😺</text></svg>
+            <svg viewBox="0 0 64 64">
+              <circle cx="32" cy="32" r="30" fill="#fff" opacity="0.08"/>
+              <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="26" fill="#fff">😺</text>
+            </svg>
           </div>
           <div id="bubble" class="bubble">Hello ! Quel algo veux-tu essayer aujourd'hui ?</div>
         </div>
@@ -106,9 +113,9 @@
       </section>
     </main>
 
-    <footer> Yesmine Ellouze edition 😊</footer>
+    <footer>Yesmine Ellouze edition 😊</footer>
   </div>
 
-  <script src="app.js"></script>
+  <script src="index.js"></script> <!-- corrigé -->
 </body>
 </html>
